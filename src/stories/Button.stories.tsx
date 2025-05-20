@@ -4,8 +4,6 @@ import CheckCircle from 'src/assets/CheckCircle';
 import { Button } from 'src/components/Button';
 // DEPENDENCIES
 import type { Meta, StoryObj } from '@storybook/react';
-// THEME
-// import { palette } from 'src/theme/mainTheme';
 
 const meta = {
     title: 'Components/Button',
