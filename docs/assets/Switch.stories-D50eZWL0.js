@@ -1,0 +1,41 @@
+import{j as o}from"./jsx-runtime-D_zvdyIk.js";import{F as _,I as X}from"./FormLabel-XyDQqCEW.js";import{u as Z,c,b as R,l as tt,e as at,p as n}from"./DefaultPropsProvider-Dhaqy-wj.js";import{u as L,S as et,F as rt}from"./FormControlLabel-CtIEXwKr.js";import{r as ot}from"./index-D4lIrffr.js";import{a as st,g as it,s as S,c as nt,b as ct,m as w,d as lt}from"./createSimplePaletteValueFilter-DH3rn0WQ.js";import"./extendSxProp-Cg2IIyrq.js";import"./ButtonBase-BQFxsSLf.js";import"./useEnhancedEffect-BZXq2JXC.js";import"./index-lu2JQmtg.js";function dt(t){return it("MuiSwitch",t)}const e=st("MuiSwitch",["root","edgeStart","edgeEnd","switchBase","colorPrimary","colorSecondary","sizeSmall","sizeMedium","checked","disabled","input","thumb","track"]),pt=t=>{const{classes:a,edge:r,size:p,color:f,checked:x,disabled:k}=t,v={root:["root",r&&`edge${c(r)}`,`size${c(p)}`],switchBase:["switchBase",`color${c(f)}`,x&&"checked",k&&"disabled"],thumb:["thumb"],track:["track"],input:["input"]},y=ct(v,dt,a);return{...a,...y}},ut=S("span",{name:"MuiSwitch",slot:"Root",overridesResolver:(t,a)=>{const{ownerState:r}=t;return[a.root,r.edge&&a[`edge${c(r.edge)}`],a[`size${c(r.size)}`]]}})({display:"inline-flex",width:34+12*2,height:14+12*2,overflow:"hidden",padding:12,boxSizing:"border-box",position:"relative",flexShrink:0,zIndex:0,verticalAlign:"middle","@media print":{colorAdjust:"exact"},variants:[{props:{edge:"start"},style:{marginLeft:-8}},{props:{edge:"end"},style:{marginRight:-8}},{props:{size:"small"},style:{width:40,height:24,padding:7,[`& .${e.thumb}`]:{width:16,height:16},[`& .${e.switchBase}`]:{padding:4,[`&.${e.checked}`]:{transform:"translateX(16px)"}}}}]}),mt=S(et,{name:"MuiSwitch",slot:"SwitchBase",overridesResolver:(t,a)=>{const{ownerState:r}=t;return[a.switchBase,{[`& .${e.input}`]:a.input},r.color!=="default"&&a[`color${c(r.color)}`]]}})(w(({theme:t})=>({position:"absolute",top:0,left:0,zIndex:1,color:t.vars?t.vars.palette.Switch.defaultColor:`${t.palette.mode==="light"?t.palette.common.white:t.palette.grey[300]}`,transition:t.transitions.create(["left","transform"],{duration:t.transitions.duration.shortest}),[`&.${e.checked}`]:{transform:"translateX(20px)"},[`&.${e.disabled}`]:{color:t.vars?t.vars.palette.Switch.defaultDisabledColor:`${t.palette.mode==="light"?t.palette.grey[100]:t.palette.grey[600]}`},[`&.${e.checked} + .${e.track}`]:{opacity:.5},[`&.${e.disabled} + .${e.track}`]:{opacity:t.vars?t.vars.opacity.switchTrackDisabled:`${t.palette.mode==="light"?.12:.2}`},[`& .${e.input}`]:{left:"-100%",width:"300%"}})),w(({theme:t})=>({"&:hover":{backgroundColor:t.vars?`rgba(${t.vars.palette.action.activeChannel} / ${t.vars.palette.action.hoverOpacity})`:R(t.palette.action.active,t.palette.action.hoverOpacity),"@media (hover: none)":{backgroundColor:"transparent"}},variants:[...Object.entries(t.palette).filter(lt(["light"])).map(([a])=>({props:{color:a},style:{[`&.${e.checked}`]:{color:(t.vars||t).palette[a].main,"&:hover":{backgroundColor:t.vars?`rgba(${t.vars.palette[a].mainChannel} / ${t.vars.palette.action.hoverOpacity})`:R(t.palette[a].main,t.palette.action.hoverOpacity),"@media (hover: none)":{backgroundColor:"transparent"}},[`&.${e.disabled}`]:{color:t.vars?t.vars.palette.Switch[`${a}DisabledColor`]:`${t.palette.mode==="light"?tt(t.palette[a].main,.62):at(t.palette[a].main,.55)}`}},[`&.${e.checked} + .${e.track}`]:{backgroundColor:(t.vars||t).palette[a].main}}}))]}))),ht=S("span",{name:"MuiSwitch",slot:"Track",overridesResolver:(t,a)=>a.track})(w(({theme:t})=>({height:"100%",width:"100%",borderRadius:14/2,zIndex:-1,transition:t.transitions.create(["opacity","background-color"],{duration:t.transitions.duration.shortest}),backgroundColor:t.vars?t.vars.palette.common.onBackground:`${t.palette.mode==="light"?t.palette.common.black:t.palette.common.white}`,opacity:t.vars?t.vars.opacity.switchTrack:`${t.palette.mode==="light"?.38:.3}`}))),bt=S("span",{name:"MuiSwitch",slot:"Thumb",overridesResolver:(t,a)=>a.thumb})(w(({theme:t})=>({boxShadow:(t.vars||t).shadows[1],backgroundColor:"currentColor",width:20,height:20,borderRadius:"50%"}))),gt=ot.forwardRef(function(a,r){const p=Z({props:a,name:"MuiSwitch"}),{className:f,color:x="primary",edge:k=!1,size:v="medium",sx:y,slots:l={},slotProps:s={},...V}=p,i={...p,color:x,edge:k,size:v},d=pt(i),$={slots:l,slotProps:s},[G,H]=L("root",{className:nt(d.root,f),elementType:ut,externalForwardedProps:$,ownerState:i,additionalProps:{sx:y}}),[J,K]=L("thumb",{className:d.thumb,elementType:bt,externalForwardedProps:$,ownerState:i}),C=o.jsx(J,{...K}),[Q,Y]=L("track",{className:d.track,elementType:ht,externalForwardedProps:$,ownerState:i});return o.jsxs(G,{...H,children:[o.jsx(mt,{type:"checkbox",icon:C,checkedIcon:C,ref:r,ownerState:i,...V,classes:{...d,root:d.switchBase},slots:{...l.switchBase&&{root:l.switchBase},...l.input&&{input:l.input}},slotProps:{...s.switchBase&&{root:typeof s.switchBase=="function"?s.switchBase(i):s.switchBase},...s.input&&{input:typeof s.input=="function"?s.input(i):s.input}}}),o.jsx(Q,{...Y})]})}),q=({onChange:t,formLabel:a,...r})=>o.jsx(rt,{sx:{marginLeft:0},control:o.jsx(gt,{onChange:t,disableRipple:!0,sx:{width:"64px",height:"32px",padding:"0px",marginRight:"8px","& .MuiSwitch-switchBase":{padding:"4px","&.Mui-checked":{transform:"translateX(32px)",color:n.neutral[100],"& + .MuiSwitch-track":{opacity:1,backgroundColor:n.primary.main},"&.Mui-disabled + .MuiSwitch-track":{opacity:.4}}},"& .MuiSwitch-thumb":{width:"24px",height:"24px",backgroundColor:n.neutral[100]},"& .MuiSwitch-track":{borderRadius:50,backgroundColor:n.neutral[800],opacity:1}},...r}),label:a});q.__docgenInfo={description:"",methods:[],displayName:"Switch",props:{formLabel:{required:!0,tsType:{name:"union",raw:"string | React.ReactNode",elements:[{name:"string"},{name:"ReactReactNode",raw:"React.ReactNode"}]},description:""}},composes:["MuiSwitchProps"]};const Rt={title:"Components/Switch",component:q,parameters:{layout:"centered"},tags:["autodocs"]},u={args:{formLabel:"Switch Label"}},m={args:{checked:!0,formLabel:"Switch Label",disabled:!0}},h={args:{checked:!1,formLabel:"Switch Label",disabled:!0}},b={args:{formLabel:o.jsx(_,{label:"SwitchLabel",stackProps:{sx:{mb:0}},endAdornment:o.jsx(X,{}),sx:{textTransform:"none",fontSize:"16px",color:n.neutral[900]}})}},g={args:{formLabel:o.jsx(_,{label:"SwitchLabel",stackProps:{sx:{mb:0}},startAdornment:o.jsx(X,{}),sx:{textTransform:"none",fontSize:"16px",color:n.neutral[900]}})}};var z,B,P;u.parameters={...u.parameters,docs:{...(z=u.parameters)==null?void 0:z.docs,source:{originalSource:`{
+  args: {
+    formLabel: 'Switch Label'
+  }
+}`,...(P=(B=u.parameters)==null?void 0:B.docs)==null?void 0:P.source}}};var T,M,j;m.parameters={...m.parameters,docs:{...(T=m.parameters)==null?void 0:T.docs,source:{originalSource:`{
+  args: {
+    checked: true,
+    formLabel: 'Switch Label',
+    disabled: true
+  }
+}`,...(j=(M=m.parameters)==null?void 0:M.docs)==null?void 0:j.source}}};var A,O,I;h.parameters={...h.parameters,docs:{...(A=h.parameters)==null?void 0:A.docs,source:{originalSource:`{
+  args: {
+    checked: false,
+    formLabel: 'Switch Label',
+    disabled: true
+  }
+}`,...(I=(O=h.parameters)==null?void 0:O.docs)==null?void 0:I.source}}};var D,F,N;b.parameters={...b.parameters,docs:{...(D=b.parameters)==null?void 0:D.docs,source:{originalSource:`{
+  args: {
+    formLabel: <FormLabel label={'SwitchLabel'} stackProps={{
+      sx: {
+        mb: 0
+      }
+    }} endAdornment={<Info />} sx={{
+      textTransform: 'none',
+      fontSize: '16px',
+      color: palette.neutral[900]
+    }} />
+  }
+}`,...(N=(F=b.parameters)==null?void 0:F.docs)==null?void 0:N.source}}};var E,U,W;g.parameters={...g.parameters,docs:{...(E=g.parameters)==null?void 0:E.docs,source:{originalSource:`{
+  args: {
+    formLabel: <FormLabel label={'SwitchLabel'} stackProps={{
+      sx: {
+        mb: 0
+      }
+    }} startAdornment={<Info />} sx={{
+      textTransform: 'none',
+      fontSize: '16px',
+      color: palette.neutral[900]
+    }} />
+  }
+}`,...(W=(U=g.parameters)==null?void 0:U.docs)==null?void 0:W.source}}};const zt=["Primary","DisabledOn","DisabledOff","WithEndAdornment","WithStartAdornment"];export{h as DisabledOff,m as DisabledOn,u as Primary,b as WithEndAdornment,g as WithStartAdornment,zt as __namedExportsOrder,Rt as default};
